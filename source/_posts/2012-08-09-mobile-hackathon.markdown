@@ -16,6 +16,8 @@ I won't be doing it on my own, but have 2 pretty awesome and super experienced d
 
 Not only will we be having some awesome times pushing our knowledge to new heights, but we will be joining many other awesome developers in the cause.
 <!--more-->
+<iframe width="560" height="315" src="http://www.youtube.com/embed/6wiv3jOaZ5w" frameborder="0" allowfullscreen></iframe>
+
 Being a UI Developer, I sometimes feel pretty intimidated when I start diving into the deeper layers of software development, and although I've made it this far in my career, I always feel somewhat lacking in my knowledge and skill and feel like it's something that I always want to improve upon.  Thankfully, I will be teaming with Adam and Beth as I both look up to them and hope that their ninja skills rubb off on me.
 
 There are only a few remaining items left to figure out before the hackathon begins...and that would be our ninjaneer uniforms and whether or not we are going to go native and use objective c or use Apache Cordova/Phonegap.
