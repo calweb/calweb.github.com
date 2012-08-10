@@ -39,4 +39,4 @@ We only have a few weeks left so it's a tall order, but if we can just scratch t
 
 The cool thing about using a framework, is if we have time, we could potentially port it to other devices, like Android and Windows Phone :)
 
-So here's to some awesome
+So here's to some awesomeness going down!
