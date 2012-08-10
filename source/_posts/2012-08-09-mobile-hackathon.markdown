@@ -3,7 +3,7 @@ layout: post
 title: "Mobile hackathon"
 date: 2012-08-09 21:37
 comments: true
-categories: [mobile,hackathon,reflection,programming]
+categories: [mobile, hackathon, reflection, programming]
 ---
 
 {% img left http://hackathon.sparcedge.com/wp-content/themes/hackathon_rev2/images/HACKATHON_Header_logo.png %}
