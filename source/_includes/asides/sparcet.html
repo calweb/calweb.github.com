@@ -38,16 +38,9 @@
                             var sparcetList = [];
                             if (!response || !response.data) { return; }
                             for (var i = 0; i < response.data.length; i++) {
-                                // if (options.skip_forks && data[i].fork) { continue; }
+
                                 sparcetList.push(response.data[i]);
                             }
-                            sparcetList.sort(function(a, b) {
-                                var aDate = new Date(a.dateSubmitted).valueOf(),
-                                        bDate = new Date(b.dateSubmitted).valueOf();
-
-                                if (aDate === bDate) { return 0; }
-                                return aDate > bDate ? -1 : 1;
-                            });
 
                             if (options.count) { sparcetList.splice(options.count); }
                             render(options.target, sparcetList);
