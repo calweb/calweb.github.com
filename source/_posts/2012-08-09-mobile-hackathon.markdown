@@ -6,7 +6,7 @@ comments: true
 categories: [mobile, hackathon, reflection, programming]
 ---
 
-{% img left http://hackathon.sparcedge.com/wp-content/themes/hackathon_rev2/images/HACKATHON_Header_logo.png %}
+{% img left http://www.sparcedge.com/wp-content/uploads/2011/08/hackathon-2012.png %}
 
 It's about to get real folks!
 
