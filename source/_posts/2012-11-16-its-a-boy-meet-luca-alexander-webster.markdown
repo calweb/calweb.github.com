@@ -3,7 +3,7 @@ layout: post
 title: "It's a boy - Meet Luca Alexander Webster"
 date: 2012-11-16 21:57
 comments: true
-categories: 
+categories: [reflections, acheivements, family]
 ---
 
 <iframe width="640" height="360" src="http://www.youtube.com/embed/Tkl44xazDYI" frameborder="0" allowfullscreen></iframe>
