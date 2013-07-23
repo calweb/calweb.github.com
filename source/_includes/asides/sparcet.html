@@ -23,7 +23,7 @@
                 var i = 0, fragment = '', t = $(target)[0];
 
                 for(i = 0; i < sparcetList.length; i++) {
-                    fragment += '<li style="clear:both;"><a href="http://'+sparcetList[i].tenant+'.sparcet.com/sparcets/'+sparcetList[i].id+'"><img style="width:50px;float: left;margin-right:10px;" src="http://sparc.sparcet.com/profiles/'+sparcetList[i].from.id+'/img_Profile?v=0" alt="">'+sparcetList[i].from.name+' said:</a><p>'+sparcetList[i].reason+'</p></li>';
+                    fragment += '<li style="clear:both;"><a href="http://'+sparcetList[i].tenant+'.teamphoria.com/sparcets/'+sparcetList[i].id+'"><img style="width:50px;float: left;margin-right:10px;" src="http://sparc.teamphoria.com/profiles/'+sparcetList[i].from.id+'/img_Profile?v=0" alt="">'+sparcetList[i].from.name+' said:</a><p>'+sparcetList[i].reason+'</p></li>';
                 }
                 t.innerHTML = fragment;
             }
@@ -31,7 +31,7 @@
             return {
                 showSparcets: function(options){
                     $.ajax({
-                        url: "http://"+options.tenant+".sparcet.com/api/sparcets?limit="+options.count+"&to="+options.user,
+                        url: "http://"+options.tenant+".teamphoria.com/api/sparcets?limit="+options.count+"&to="+options.user,
                         dataType: 'jsonp',
                         error: function (err) { $(options.target + ' li.loading').addClass('error').text("Error loading feed"); },
                         success: function(response) {
@@ -50,6 +50,6 @@
             };
         })(jQuery);
     </script>
-<p>Powered by <br><a href="http://www.sparcd.com"><img style="width:150px;border:none;" src="http://www.sparcd.com/wp-content/themes/Sparcd-Site-Theme-rev2/img/SPARCD-app-logo.png" alt=""></a></p>
+<p>Powered by <br><a href="http://www.teamphoria.com"><img style="width:150px;border:none;" src="http://www.teamphoria.com/wp-content/themes/Sparcd-Site-Theme-rev2/img/teamphoria-logo-drk.png" alt=""></a></p>
 </section>
 {% endif %}
