@@ -31,8 +31,9 @@
             return {
                 showSparcets: function(options){
                     $.ajax({
-                        url: "http://"+options.tenant+".teamphoria.com/api/sparcets?limit="+options.count+"&to="+options.user,
+                        url: "http://"+options.tenant+".teamphoria.com/api/sparcets",
                         dataType: 'jsonp',
+                        data: {limit: options.count, to: options.user},
                         error: function (err) { $(options.target + ' li.loading').addClass('error').text("Error loading feed"); },
                         success: function(response) {
                             var sparcetList = [];
