@@ -85,8 +85,8 @@ pinboard_user:
 pinboard_count: 3
 
 # Delicious
-delicious_user:
-delicious_count: 3
+# delicious_user:
+# delicious_count: 3
 
 # Disqus Comments
 disqus_short_name: calweb
@@ -102,6 +102,6 @@ facebook_like: true
 coderwall_user: calweb
 
 # Sparcet
-sparcet_user: 9699304f-bf63-4d6b-97b6-fc895bd37a0c
-sparcet_count: 5
-sparcet_tenant: sparc
+# sparcet_user: 9699304f-bf63-4d6b-97b6-fc895bd37a0c
+# sparcet_count: 5
+# sparcet_tenant: sparc
