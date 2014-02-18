@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: family | Sol Net]]></title>
-  <link href="http://blog.hellocalvin.com/blog/categories/family/atom.xml" rel="self"/>
-  <link href="http://blog.hellocalvin.com/"/>
-  <updated>2014-02-18T00:43:13-05:00</updated>
-  <id>http://blog.hellocalvin.com/</id>
+  <link href="http://calweb.github.com/blog/categories/family/atom.xml" rel="self"/>
+  <link href="http://calweb.github.com/"/>
+  <updated>2014-02-18T01:30:29-05:00</updated>
+  <id>http://calweb.github.com/</id>
   <author>
     <name><![CDATA[Calvin Webster]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Luca is almost 6 months!]]></title>
-    <link href="http://blog.hellocalvin.com/2013/02/21/luca-is-almost-6-months/"/>
+    <link href="http://calweb.github.com/2013/02/21/luca-is-almost-6-months/"/>
     <updated>2013-02-21T01:36:00-05:00</updated>
-    <id>http://blog.hellocalvin.com/2013/02/21/luca-is-almost-6-months</id>
+    <id>http://calweb.github.com/2013/02/21/luca-is-almost-6-months</id>
     <content type="html"><![CDATA[<iframe width="640" height="360" src="http://www.youtube.com/embed/rFbdtrl2ACY" frameborder="0" allowfullscreen></iframe>
 
 
@@ -27,9 +27,9 @@
   
   <entry>
     <title type="html"><![CDATA[It's a boy - Meet Luca Alexander Webster]]></title>
-    <link href="http://blog.hellocalvin.com/2012/11/16/its-a-boy-meet-luca-alexander-webster/"/>
+    <link href="http://calweb.github.com/2012/11/16/its-a-boy-meet-luca-alexander-webster/"/>
     <updated>2012-11-16T21:57:00-05:00</updated>
-    <id>http://blog.hellocalvin.com/2012/11/16/its-a-boy-meet-luca-alexander-webster</id>
+    <id>http://calweb.github.com/2012/11/16/its-a-boy-meet-luca-alexander-webster</id>
     <content type="html"><![CDATA[<iframe width="640" height="360" src="http://www.youtube.com/embed/Tkl44xazDYI" frameborder="0" allowfullscreen></iframe>
 
 
@@ -66,9 +66,9 @@
   
   <entry>
     <title type="html"><![CDATA[more of a man...]]></title>
-    <link href="http://blog.hellocalvin.com/2012/08/13/more-of-a-man-dot-dot-dot/"/>
+    <link href="http://calweb.github.com/2012/08/13/more-of-a-man-dot-dot-dot/"/>
     <updated>2012-08-13T01:06:00-04:00</updated>
-    <id>http://blog.hellocalvin.com/2012/08/13/more-of-a-man-dot-dot-dot</id>
+    <id>http://calweb.github.com/2012/08/13/more-of-a-man-dot-dot-dot</id>
     <content type="html"><![CDATA[<p><img class="left" src="http://farm7.staticflickr.com/6112/6329588043_3ccafd063f.jpg"></p>
 
 <p>It's been close to a year that I married my best friend and the person that inspires me everyday to be a better person.

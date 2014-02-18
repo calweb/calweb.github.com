@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: cooking | Sol Net]]></title>
-  <link href="http://blog.hellocalvin.com/blog/categories/cooking/atom.xml" rel="self"/>
-  <link href="http://blog.hellocalvin.com/"/>
-  <updated>2014-02-18T00:43:13-05:00</updated>
-  <id>http://blog.hellocalvin.com/</id>
+  <link href="http://calweb.github.com/blog/categories/cooking/atom.xml" rel="self"/>
+  <link href="http://calweb.github.com/"/>
+  <updated>2014-02-18T01:30:29-05:00</updated>
+  <id>http://calweb.github.com/</id>
   <author>
     <name><![CDATA[Calvin Webster]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[just flour and water]]></title>
-    <link href="http://blog.hellocalvin.com/2013/08/01/just-flour-and-water/"/>
+    <link href="http://calweb.github.com/2013/08/01/just-flour-and-water/"/>
     <updated>2013-08-01T00:02:00-04:00</updated>
-    <id>http://blog.hellocalvin.com/2013/08/01/just-flour-and-water</id>
+    <id>http://calweb.github.com/2013/08/01/just-flour-and-water</id>
     <content type="html"><![CDATA[<p><a href="http://www.flickr.com/photos/calweb/9411148263/" title="Homemade pasta by Calweb, on Flickr"><img src="http://farm3.staticflickr.com/2822/9411148263_2f75f2e275.jpg" width="500" height="500" alt="Homemade pasta"></a></p>
 
 <p>It's funny how almost a year goes by and no updates...so I thought to put something up here just to go through the motions of actually updating my blog....</p>

@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: hackathon | Sol Net]]></title>
-  <link href="http://blog.hellocalvin.com/blog/categories/hackathon/atom.xml" rel="self"/>
-  <link href="http://blog.hellocalvin.com/"/>
-  <updated>2014-02-18T00:43:13-05:00</updated>
-  <id>http://blog.hellocalvin.com/</id>
+  <link href="http://calweb.github.com/blog/categories/hackathon/atom.xml" rel="self"/>
+  <link href="http://calweb.github.com/"/>
+  <updated>2014-02-18T01:30:29-05:00</updated>
+  <id>http://calweb.github.com/</id>
   <author>
     <name><![CDATA[Calvin Webster]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Mobile hackathon]]></title>
-    <link href="http://blog.hellocalvin.com/2012/08/09/mobile-hackathon/"/>
+    <link href="http://calweb.github.com/2012/08/09/mobile-hackathon/"/>
     <updated>2012-08-09T21:37:00-04:00</updated>
-    <id>http://blog.hellocalvin.com/2012/08/09/mobile-hackathon</id>
+    <id>http://calweb.github.com/2012/08/09/mobile-hackathon</id>
     <content type="html"><![CDATA[<p><img class="left" src="http://www.sparcedge.com/wp-content/uploads/2011/08/hackathon-2012.png"></p>
 
 <p>It's about to get real folks!</p>

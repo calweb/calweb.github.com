@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: refresh | Sol Net]]></title>
-  <link href="http://blog.hellocalvin.com/blog/categories/refresh/atom.xml" rel="self"/>
-  <link href="http://blog.hellocalvin.com/"/>
-  <updated>2014-02-18T00:43:13-05:00</updated>
-  <id>http://blog.hellocalvin.com/</id>
+  <link href="http://calweb.github.com/blog/categories/refresh/atom.xml" rel="self"/>
+  <link href="http://calweb.github.com/"/>
+  <updated>2014-02-18T01:30:29-05:00</updated>
+  <id>http://calweb.github.com/</id>
   <author>
     <name><![CDATA[Calvin Webster]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[and...I'm blogging again]]></title>
-    <link href="http://blog.hellocalvin.com/2012/08/08/and-dot-dot-dot-im-blogging-again/"/>
+    <link href="http://calweb.github.com/2012/08/08/and-dot-dot-dot-im-blogging-again/"/>
     <updated>2012-08-08T01:00:00-04:00</updated>
-    <id>http://blog.hellocalvin.com/2012/08/08/and-dot-dot-dot-im-blogging-again</id>
+    <id>http://calweb.github.com/2012/08/08/and-dot-dot-dot-im-blogging-again</id>
     <content type="html"><![CDATA[<h2>excited to start again and chasing unicorns</h2>
 
 <p><img src="http://farm9.staticflickr.com/8425/7734843740_4a1e70df20_n.jpg" alt="Chasing Unicorns" /></p>

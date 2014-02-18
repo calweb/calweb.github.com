@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: luca | Sol Net]]></title>
-  <link href="http://blog.hellocalvin.com/blog/categories/luca/atom.xml" rel="self"/>
-  <link href="http://blog.hellocalvin.com/"/>
-  <updated>2014-02-18T00:43:13-05:00</updated>
-  <id>http://blog.hellocalvin.com/</id>
+  <link href="http://calweb.github.com/blog/categories/luca/atom.xml" rel="self"/>
+  <link href="http://calweb.github.com/"/>
+  <updated>2014-02-18T01:30:29-05:00</updated>
+  <id>http://calweb.github.com/</id>
   <author>
     <name><![CDATA[Calvin Webster]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Luca is almost 6 months!]]></title>
-    <link href="http://blog.hellocalvin.com/2013/02/21/luca-is-almost-6-months/"/>
+    <link href="http://calweb.github.com/2013/02/21/luca-is-almost-6-months/"/>
     <updated>2013-02-21T01:36:00-05:00</updated>
-    <id>http://blog.hellocalvin.com/2013/02/21/luca-is-almost-6-months</id>
+    <id>http://calweb.github.com/2013/02/21/luca-is-almost-6-months</id>
     <content type="html"><![CDATA[<iframe width="640" height="360" src="http://www.youtube.com/embed/rFbdtrl2ACY" frameborder="0" allowfullscreen></iframe>
 
 
