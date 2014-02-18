@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: reflections | Sol Net]]></title>
+  <link href="http://blog.hellocalvin.com/blog/categories/reflections/atom.xml" rel="self"/>
+  <link href="http://blog.hellocalvin.com/"/>
+  <updated>2014-02-18T00:43:13-05:00</updated>
+  <id>http://blog.hellocalvin.com/</id>
+  <author>
+    <name><![CDATA[Calvin Webster]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Power and Economic Development in the Charleston Tech Community]]></title>
+    <link href="http://blog.hellocalvin.com/2013/01/14/power-and-economic-development-in-the-charleston-tech-community/"/>
+    <updated>2013-01-14T21:53:00-05:00</updated>
+    <id>http://blog.hellocalvin.com/2013/01/14/power-and-economic-development-in-the-charleston-tech-community</id>
+    <content type="html"><![CDATA[<p><a href="http://www.flickr.com/photos/pla1/5174995086/" title="BarCampCHS 2010 Topic Board by Patrick L Archibald, on Flickr"><img src="http://farm5.staticflickr.com/4128/5174995086_4067c16676_z.jpg" width="640" height="480" alt="BarCampCHS 2010 Topic Board"></a></p>
+
+<p>I've been in a weird mood lately.  This past weekend I attended the local Linux Users group and chatted about free software. Yesterday I heard about Aaron Swartz commiting suicide and have mixed, albeit, sad feelings about that. And this morning, following a recent conference announcement from the Charleston Digital Corridor's (CDC) Code Show, I saw a few comments that had me thinking about the state of our tech community and what it means to me.</p>
+
+<!--more-->
+
+
+<p>Chalk it up to being sentimental and super invested in the local tech community I've grown with here in Charleston for the past 5 years, but I got a little defensive about one of the announcement tweets,</p>
+
+<p><blockquote><p>Introducing #Chs' 1st #Software #TechConference: CODEshow 3/14 with @MongoDB, @AngularJS, @Nodejs. http://www.chscodeshow.com  #chstech #SETech #SC</p><footer><strong>@chscodes</strong> <cite><a href='https://twitter.com/chscodes/status/290818518084108289]'>twitter.com/chscodes/status/&hellip;</a></cite></footer></blockquote></p>
+
+<p>My gut dissapointment was later validated from 2 people I really respect and are super involved in the local tech community:</p>
+
+<p><blockquote><p>@CHSdigital 1st techconference, really?</p><footer><strong>@amblin</strong> <cite><a href='https://twitter.com/amblin'>twitter.com/amblin/&hellip;</a></cite></footer></blockquote></p>
+
+<p>and then</p>
+
+<p><blockquote><p>@amblin @CHSdigital and I'm a bit disappointed that I never saw any kind of call for talk submissions.</p><footer><strong>@russellbryant</strong> <cite><a href='https://twitter.com/russellbryant'>twitter.com/russellbryant/&hellip;</a></cite></footer></blockquote></p>
+
+<p>Being really involved with Barcamp and being part of building it up as a mostly tech focused conference is what dissapointed me in that the CDC didn't really acknowledge that.</p>
+
+<p>This 'gut' dissapointment started to evolve to more of an understanding of 2 distinct camps and the motivations behind this conference and one like Barcamp Charleston, which is a pure community event.</p>
+
+<h3>I see two very distinct roles of the Charleston 'Tech' Community:</h3>
+
+<p> One role is very distinctly what you would consider 'grassroots', meaning individuals, people wanting to connect and share and learn from one another.  Of course they want to raise the bar of our local #chs, but moreso want to identify, socialize, learn, and share the wonderful things that we bring to enrich this community.</p>
+
+<p> A different role, in my mind anyway, is really and primarily about driving economic growth in our knowledge economy...aka economic development.  They want to realize our 'Silicon Harbor' by supporting the growth of companies and supporting the ones here...as well as raising the profile of Charleston so as to attract more companies to call here HOME. Having a conference with nationally known speakers can only help the profile of our city and get a conversation going to a broader stage, especially knowing the 'sell' of #chs is an easy one.</p>
+
+<p> Understanding these two 'roles' helps me put things in perspective, but still doesn't completely iron out why the announcement tweet turned me the wrong way...</p>
+
+<h3>which turned a little more with 2 more responses from @chscodes</h3>
+
+<p> In reponse to @amblin asking if it really was the first software tech conference:</p>
+
+<p> <blockquote><p>@amblin This is the first conference in #CHS focused exclusively on software.</p><footer><strong>@chsdigital</strong> <cite><a href='https://twitter.com/chsdigital'>twitter.com/chsdigital/&hellip;</a></cite></footer></blockquote></p>
+
+<p> And in response to @russellbryant about open calls to speak:</p>
+
+<p> <blockquote><p>@russellbryant @amblin We'll be doing a local-focused event again later in the year. This is designed 2 bring national speakers to #Chs.</p><footer><strong>@chscodes</strong> <cite><a href='https://twitter.com/chscodes'>twitter.com/chscodes/&hellip;</a></cite></footer></blockquote></p>
+
+<p>To me, @chscodes missed the point of their questions and responded more in a tone of a parent telling their children to calm down, we're giving something to the community soon, but this is bringing more knowledgeable/known people to charleston.</p>
+
+<p>The thing is, Russell Bryant is a rockstar amongst geeks...he currently is a Principle software engineer at Red Hat and plays a very invluential role in Red Hat's Open Stack project....and before that, he helped lead core development of Asterisk - 'The world's most widely adopted open source communications platform'.  If that's not national, not sure what is.</p>
+
+<p>And I'm not trying to take away anything from the Codeshow...I really want to go and am excited they are showcasing some technologies that I really care about and use all the time.  In fact, I'm really happy with the state of Charleston's tech community; I really feel like there is such diversity of not only opportunities to learn, but a whole lot of talented and nice people to learn from as well as companies to work for.</p>
+
+<p>I feel very strongly about the mission of the Charleston Digital Corridor (CDC) in that they help nurture and grow smaller companies and help broadcast and find talent via the networking and being a hub.  They work hard, very hard.  Codecamp and tech talks...they do a lot, but there's always room to improve.</p>
+
+<p>Through many community tech events and local user groups, we've embraced celebrating the talents and local capital we have in Charleston and we've demonstrated that there's Power in that.  Power to come together and strengthen our tech community. Power to connect and power to learn from one another.</p>
+
+<p>It's just that my drive to learn and connect with more cool geeks doesn't bring jobs to the community.</p>
+
+<p>I'm also not naieve enough to ignore the importance of building up the companies we have here in Charleston and attracting new ones.  I'm certain there's a lot of factors that go into making a decsion to locate your company to a specific area...and I feel like a very important one, at least for attracting talent, is having a solid tech community outside of just the local companies in the area.</p>
+
+<p>I'm not anyone special or have any super talent that would be considered 'national', and I realize I may be speaking from a narrow perspective since I don't regularly keep pace with all the CDC and the local 'grassroots tech community' happenings, like Code Retreat which sounds like an awesome 'grassroots tech community' event that was put on by the CDC.</p>
+
+<p>My main reason for rambling tonight is to get my thoughts out there (I start a lot of posts that never get finished)...and also just to provide some feedback to the CDC to maybe start a dialog with the larger 'grassroots tech community' to get a better understanding of each other...because I believe there is POWER in that and think that each party can enrich the other's 'primary goals'</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[It's a boy - Meet Luca Alexander Webster]]></title>
+    <link href="http://blog.hellocalvin.com/2012/11/16/its-a-boy-meet-luca-alexander-webster/"/>
+    <updated>2012-11-16T21:57:00-05:00</updated>
+    <id>http://blog.hellocalvin.com/2012/11/16/its-a-boy-meet-luca-alexander-webster</id>
+    <content type="html"><![CDATA[<iframe width="640" height="360" src="http://www.youtube.com/embed/Tkl44xazDYI" frameborder="0" allowfullscreen></iframe>
+
+
+<p>It's official!  We have (well, have had now for 2 1/2 months) a beautiful baby boy named Luca Alexander Webster, weighing in at 6lbs 12oz.</p>
+
+<p>Needless to say things have stayed busy, especially for Anne Marie, but I'm so excited to be a father and ready to fill out my new role.  In the video above, he is less than an hour old and recovering from being intubated as he was not breathing initially when he came out.</p>
+
+<!--more-->
+
+
+<p><img class="left" src="http://farm9.staticflickr.com/8066/8191478409_fdebb0feb8.jpg"></p>
+
+<p>The time has flown by!  What is really cool is that I'm finding he has a cute little personality and soooo many facial expressions. All the joys people mention when having a new little one are true, and it's hard to describe how awesome it really is to hold your own, your little one.</p>
+
+<p>Besides having a lot of reflux, he sleeps really well and is a playful baby. He's not really cooing yet, but he smiles and acts like he is riding a bicycle if you lay him flat.  He defnitely will be an active child!</p>
+
+<p>I can't wait to start documenting more as he grows and grows.</p>
+
+<p>I'm finding that I am thinking about things that didn't really matter to me before like what are the nearest schools or what am I doing to be ready for when he walks....or even what could he pull out of the walls that may hurt him.  Are there schools nearby that will be a good fit? Do we want to do Montessori?  Who will he be when he grows up?  Will he like who I am as a person?</p>
+
+<p>I know some of that is a little silly, but still, its like my life got so much bigger (in a really good way)...and I want to make sure I make as much room and prepare as much as I can so I can allow as much growth, love, and happiness as possible.</p>
+
+<p>The little guy is amazing and I can't wait for all of my friends and family to meet him!</p>
+
+<p>Here he is as a Ninja on Halloween:</p>
+
+<p><img class="center" src="http://farm9.staticflickr.com/8463/8143704874_5b6f6c8f07.jpg"></p>
+
+<p>And his angry face when he wants to be held:</p>
+
+<p><img class="center" src="http://farm9.staticflickr.com/8070/8198046318_87cf556c8f.jpg"></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[more of a man...]]></title>
+    <link href="http://blog.hellocalvin.com/2012/08/13/more-of-a-man-dot-dot-dot/"/>
+    <updated>2012-08-13T01:06:00-04:00</updated>
+    <id>http://blog.hellocalvin.com/2012/08/13/more-of-a-man-dot-dot-dot</id>
+    <content type="html"><![CDATA[<p><img class="left" src="http://farm7.staticflickr.com/6112/6329588043_3ccafd063f.jpg"></p>
+
+<p>It's been close to a year that I married my best friend and the person that inspires me everyday to be a better person.
+Nearly 5 years ago I packed all my stuff up and moved to Charleston to find better opportunities both for life in general and to further my career in the world of web/software development.</p>
+
+<p>I can honestly say that on all fronts, I couldn't be in a better position than I am now.</p>
+
+<p>I married and became best friends with an amazing women, I have a baby on the way (less than 5wks now)...and I work at one of the best software development shops in SC.</p>
+
+<!--more-->
+
+
+<p><img src="http://farm8.staticflickr.com/7127/7771573350_41ed348f20_o.jpg"></p>
+
+<p>Personally and professionally, I'm loving life.  And with the upcoming birth of our first child, I've been reflecting a lot on where I've been and where I want to be.</p>
+
+<p>I find that I've been spending a lot of time worrying about how I will be as a father and will I be able to keep the pace with the demands of a new child.  I've let myself go health-wise and have become 'more of a man' from not paying attention to what I eat and the exercise I need to be healthy.  This, as I'm starting to realize, needs to change.</p>
+
+<p>Changing these habits of eating and now exercising has been hard because I've been so unbalanced in my daily life, neglecting to really balance my personal needs.</p>
+
+<p>I am aiming to change these bad habits and achieve more balance by honestly carving out time everyday to spend being active, whether it be a hike, the gym, or a fierce game of raquetball.</p>
+
+<p>Time has been flying by and it's time for me to start making sure I will be around for a while!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[and...I'm blogging again]]></title>
+    <link href="http://blog.hellocalvin.com/2012/08/08/and-dot-dot-dot-im-blogging-again/"/>
+    <updated>2012-08-08T01:00:00-04:00</updated>
+    <id>http://blog.hellocalvin.com/2012/08/08/and-dot-dot-dot-im-blogging-again</id>
+    <content type="html"><![CDATA[<h2>excited to start again and chasing unicorns</h2>
+
+<p><img src="http://farm9.staticflickr.com/8425/7734843740_4a1e70df20_n.jpg" alt="Chasing Unicorns" /></p>
+
+<p>So I've been on hiatus from blogging and haven't really done it for the past few years, but I feel like lately I have a lot more to say.</p>
+
+<p>Just in the past year I've gone through a lot of transformations from being a husband, and now (soon to be), father.  This is so amazing to me and I'd like to share.</p>
+
+<p>I've also made a lot of new friends and have been pushing my development knowledge to new levels, mostly due to my work at SPARC and the amazing coworkers I have there.</p>
+
+<p>Stay tuned as I begin documenting my adventures!</p>
+]]></content>
+  </entry>
+  
+</feed>
