@@ -63,6 +63,8 @@ The problem I see:
 
  To me, primary sources are the highest quality information you can get.  My opinions on my blog are a primary source, peer-reviewed scientific articles are usually primary sources, taking a picture at an event is a primary source.
 
+ Here's a great example that I've seen in my feed a few times: http://www.theepochtimes.com/n3/513771-girl-killed-herself-live-on-cam-just-after-dad-husband-seen-her-while-doing-this-a-facebook-scam/
+
 
 ### Shared Facebook accounts
 
