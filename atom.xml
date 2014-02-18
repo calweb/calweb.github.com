@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Sol Net]]></title>
-  <link href="http://calweb.github.com/atom.xml" rel="self"/>
-  <link href="http://calweb.github.com/"/>
-  <updated>2014-02-18T01:30:29-05:00</updated>
-  <id>http://calweb.github.com/</id>
+  <link href="http://blog.calvin.io/atom.xml" rel="self"/>
+  <link href="http://blog.calvin.io/"/>
+  <updated>2014-02-18T01:35:41-05:00</updated>
+  <id>http://blog.calvin.io/</id>
   <author>
     <name><![CDATA[Calvin Webster]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[random things that could be better]]></title>
-    <link href="http://calweb.github.com/2014/02/14/random-things-that-could-be-better/"/>
+    <link href="http://blog.calvin.io/2014/02/14/random-things-that-could-be-better/"/>
     <updated>2014-02-14T01:07:00-05:00</updated>
-    <id>http://calweb.github.com/2014/02/14/random-things-that-could-be-better</id>
+    <id>http://blog.calvin.io/2014/02/14/random-things-that-could-be-better</id>
     <content type="html"><![CDATA[<p><img class="left" src="http://weknowmemes.com/wp-content/uploads/2011/05/rage-guy-original.png"></p>
 
 <p>So I was thinking today&#8230;well, I like to think that I think everyday, but in this case&#8230;my thinking has had a backlog of sorts.  I feel like I need to write this out as a sort of therapy to release my pressure valve.</p>
@@ -99,9 +99,9 @@
   
   <entry>
     <title type="html"><![CDATA[just flour and water]]></title>
-    <link href="http://calweb.github.com/2013/08/01/just-flour-and-water/"/>
+    <link href="http://blog.calvin.io/2013/08/01/just-flour-and-water/"/>
     <updated>2013-08-01T00:02:00-04:00</updated>
-    <id>http://calweb.github.com/2013/08/01/just-flour-and-water</id>
+    <id>http://blog.calvin.io/2013/08/01/just-flour-and-water</id>
     <content type="html"><![CDATA[<p><a href="http://www.flickr.com/photos/calweb/9411148263/" title="Homemade pasta by Calweb, on Flickr"><img src="http://farm3.staticflickr.com/2822/9411148263_2f75f2e275.jpg" width="500" height="500" alt="Homemade pasta"></a></p>
 
 <p>It&#8217;s funny how almost a year goes by and no updates&#8230;so I thought to put something up here just to go through the motions of actually updating my blog&#8230;.</p>
@@ -159,9 +159,9 @@ The picture above shows the finished product with spaghetti noodles made with eg
   
   <entry>
     <title type="html"><![CDATA[Luca is almost 6 months!]]></title>
-    <link href="http://calweb.github.com/2013/02/21/luca-is-almost-6-months/"/>
+    <link href="http://blog.calvin.io/2013/02/21/luca-is-almost-6-months/"/>
     <updated>2013-02-21T01:36:00-05:00</updated>
-    <id>http://calweb.github.com/2013/02/21/luca-is-almost-6-months</id>
+    <id>http://blog.calvin.io/2013/02/21/luca-is-almost-6-months</id>
     <content type="html"><![CDATA[<iframe width="640" height="360" src="http://www.youtube.com/embed/rFbdtrl2ACY" frameborder="0" allowfullscreen></iframe>
 
 
@@ -171,9 +171,9 @@ The picture above shows the finished product with spaghetti noodles made with eg
   
   <entry>
     <title type="html"><![CDATA[Power and Economic Development in the Charleston Tech Community]]></title>
-    <link href="http://calweb.github.com/2013/01/14/power-and-economic-development-in-the-charleston-tech-community/"/>
+    <link href="http://blog.calvin.io/2013/01/14/power-and-economic-development-in-the-charleston-tech-community/"/>
     <updated>2013-01-14T21:53:00-05:00</updated>
-    <id>http://calweb.github.com/2013/01/14/power-and-economic-development-in-the-charleston-tech-community</id>
+    <id>http://blog.calvin.io/2013/01/14/power-and-economic-development-in-the-charleston-tech-community</id>
     <content type="html"><![CDATA[<p><a href="http://www.flickr.com/photos/pla1/5174995086/" title="BarCampCHS 2010 Topic Board by Patrick L Archibald, on Flickr"><img src="http://farm5.staticflickr.com/4128/5174995086_4067c16676_z.jpg" width="640" height="480" alt="BarCampCHS 2010 Topic Board"></a></p>
 
 <p>I&#8217;ve been in a weird mood lately.  This past weekend I attended the local Linux Users group and chatted about free software. Yesterday I heard about Aaron Swartz commiting suicide and have mixed, albeit, sad feelings about that. And this morning, following a recent conference announcement from the Charleston Digital Corridor&#8217;s (CDC) Code Show, I saw a few comments that had me thinking about the state of our tech community and what it means to me.</p>
@@ -240,9 +240,9 @@ The picture above shows the finished product with spaghetti noodles made with eg
   
   <entry>
     <title type="html"><![CDATA[It's a boy - Meet Luca Alexander Webster]]></title>
-    <link href="http://calweb.github.com/2012/11/16/its-a-boy-meet-luca-alexander-webster/"/>
+    <link href="http://blog.calvin.io/2012/11/16/its-a-boy-meet-luca-alexander-webster/"/>
     <updated>2012-11-16T21:57:00-05:00</updated>
-    <id>http://calweb.github.com/2012/11/16/its-a-boy-meet-luca-alexander-webster</id>
+    <id>http://blog.calvin.io/2012/11/16/its-a-boy-meet-luca-alexander-webster</id>
     <content type="html"><![CDATA[<iframe width="640" height="360" src="http://www.youtube.com/embed/Tkl44xazDYI" frameborder="0" allowfullscreen></iframe>
 
 
@@ -279,9 +279,9 @@ The picture above shows the finished product with spaghetti noodles made with eg
   
   <entry>
     <title type="html"><![CDATA[more of a man...]]></title>
-    <link href="http://calweb.github.com/2012/08/13/more-of-a-man-dot-dot-dot/"/>
+    <link href="http://blog.calvin.io/2012/08/13/more-of-a-man-dot-dot-dot/"/>
     <updated>2012-08-13T01:06:00-04:00</updated>
-    <id>http://calweb.github.com/2012/08/13/more-of-a-man-dot-dot-dot</id>
+    <id>http://blog.calvin.io/2012/08/13/more-of-a-man-dot-dot-dot</id>
     <content type="html"><![CDATA[<p><img class="left" src="http://farm7.staticflickr.com/6112/6329588043_3ccafd063f.jpg"></p>
 
 <p>It&#8217;s been close to a year that I married my best friend and the person that inspires me everyday to be a better person.
@@ -310,9 +310,9 @@ Nearly 5 years ago I packed all my stuff up and moved to Charleston to find bett
   
   <entry>
     <title type="html"><![CDATA[Mobile hackathon]]></title>
-    <link href="http://calweb.github.com/2012/08/09/mobile-hackathon/"/>
+    <link href="http://blog.calvin.io/2012/08/09/mobile-hackathon/"/>
     <updated>2012-08-09T21:37:00-04:00</updated>
-    <id>http://calweb.github.com/2012/08/09/mobile-hackathon</id>
+    <id>http://blog.calvin.io/2012/08/09/mobile-hackathon</id>
     <content type="html"><![CDATA[<p><img class="left" src="http://www.sparcedge.com/wp-content/uploads/2011/08/hackathon-2012.png"></p>
 
 <p>It&#8217;s about to get real folks!</p>
@@ -359,9 +359,9 @@ Nearly 5 years ago I packed all my stuff up and moved to Charleston to find bett
   
   <entry>
     <title type="html"><![CDATA[and...I'm blogging again]]></title>
-    <link href="http://calweb.github.com/2012/08/08/and-dot-dot-dot-im-blogging-again/"/>
+    <link href="http://blog.calvin.io/2012/08/08/and-dot-dot-dot-im-blogging-again/"/>
     <updated>2012-08-08T01:00:00-04:00</updated>
-    <id>http://calweb.github.com/2012/08/08/and-dot-dot-dot-im-blogging-again</id>
+    <id>http://blog.calvin.io/2012/08/08/and-dot-dot-dot-im-blogging-again</id>
     <content type="html"><![CDATA[<h2>excited to start again and chasing unicorns</h2>
 
 <p><img src="http://farm9.staticflickr.com/8425/7734843740_4a1e70df20_n.jpg" alt="Chasing Unicorns" /></p>
@@ -378,9 +378,9 @@ Nearly 5 years ago I packed all my stuff up and moved to Charleston to find bett
   
   <entry>
     <title type="html"><![CDATA[I was smart all my life until]]></title>
-    <link href="http://calweb.github.com/2011/08/11/i-was-smart-all-my-life-until/"/>
+    <link href="http://blog.calvin.io/2011/08/11/i-was-smart-all-my-life-until/"/>
     <updated>2011-08-11T21:57:00-04:00</updated>
-    <id>http://calweb.github.com/2011/08/11/i-was-smart-all-my-life-until</id>
+    <id>http://blog.calvin.io/2011/08/11/i-was-smart-all-my-life-until</id>
     <content type="html"><![CDATA[<p>&#8230;you realize you&#8217;ve been in a bubble.  As most of my friends know, I&#8217;ve started a new job at <a href="http://www.sparcedge.com">SPARC</a>, a local software dev firm&#8230;but everytime I go into work, I feel like a little baby crawling on the floor or pooping in my pants!</p>
 
 

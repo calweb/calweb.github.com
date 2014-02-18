@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: ideas | Sol Net]]></title>
-  <link href="http://calweb.github.com/blog/categories/ideas/atom.xml" rel="self"/>
-  <link href="http://calweb.github.com/"/>
-  <updated>2014-02-18T01:30:29-05:00</updated>
-  <id>http://calweb.github.com/</id>
+  <link href="http://blog.calvin.io/blog/categories/ideas/atom.xml" rel="self"/>
+  <link href="http://blog.calvin.io/"/>
+  <updated>2014-02-18T01:35:41-05:00</updated>
+  <id>http://blog.calvin.io/</id>
   <author>
     <name><![CDATA[Calvin Webster]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[random things that could be better]]></title>
-    <link href="http://calweb.github.com/2014/02/14/random-things-that-could-be-better/"/>
+    <link href="http://blog.calvin.io/2014/02/14/random-things-that-could-be-better/"/>
     <updated>2014-02-14T01:07:00-05:00</updated>
-    <id>http://calweb.github.com/2014/02/14/random-things-that-could-be-better</id>
+    <id>http://blog.calvin.io/2014/02/14/random-things-that-could-be-better</id>
     <content type="html"><![CDATA[<p><img class="left" src="http://weknowmemes.com/wp-content/uploads/2011/05/rage-guy-original.png"></p>
 
 <p>So I was thinking today...well, I like to think that I think everyday, but in this case...my thinking has had a backlog of sorts.  I feel like I need to write this out as a sort of therapy to release my pressure valve.</p>

@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: work | Sol Net]]></title>
-  <link href="http://calweb.github.com/blog/categories/work/atom.xml" rel="self"/>
-  <link href="http://calweb.github.com/"/>
-  <updated>2014-02-18T01:30:29-05:00</updated>
-  <id>http://calweb.github.com/</id>
+  <link href="http://blog.calvin.io/blog/categories/work/atom.xml" rel="self"/>
+  <link href="http://blog.calvin.io/"/>
+  <updated>2014-02-18T01:35:41-05:00</updated>
+  <id>http://blog.calvin.io/</id>
   <author>
     <name><![CDATA[Calvin Webster]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[I was smart all my life until]]></title>
-    <link href="http://calweb.github.com/2011/08/11/i-was-smart-all-my-life-until/"/>
+    <link href="http://blog.calvin.io/2011/08/11/i-was-smart-all-my-life-until/"/>
     <updated>2011-08-11T21:57:00-04:00</updated>
-    <id>http://calweb.github.com/2011/08/11/i-was-smart-all-my-life-until</id>
+    <id>http://blog.calvin.io/2011/08/11/i-was-smart-all-my-life-until</id>
     <content type="html"><![CDATA[<p>&#8230;you realize you&#8217;ve been in a bubble.  As most of my friends know, I&#8217;ve started a new job at <a href="http://www.sparcedge.com">SPARC</a>, a local software dev firm&#8230;but everytime I go into work, I feel like a little baby crawling on the floor or pooping in my pants!</p>
 
 
