@@ -4,7 +4,7 @@
   <title><![CDATA[Category: work | Sol Net]]></title>
   <link href="http://blog.calvin.io/blog/categories/work/atom.xml" rel="self"/>
   <link href="http://blog.calvin.io/"/>
-  <updated>2014-02-20T08:26:43-05:00</updated>
+  <updated>2014-04-04T15:18:00-04:00</updated>
   <id>http://blog.calvin.io/</id>
   <author>
     <name><![CDATA[Calvin Webster]]></name>
@@ -12,6 +12,16 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[my class rocks]]></title>
+    <link href="http://blog.calvin.io/2014/04/14/my-class-rocks/"/>
+    <updated>2014-04-14T21:57:00-04:00</updated>
+    <id>http://blog.calvin.io/2014/04/14/my-class-rocks</id>
+    <content type="html"><![CDATA[<p>For slslslsl real, this is amazing and everyone here is amazing...</p>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[I was smart all my life until]]></title>
@@ -23,7 +33,7 @@
 
 
 
-<p>From evented javascript design to being on the front lines of enterprise app development, there&#8217;s a lot to learn.  The people are all amazing, humble, and so extremely talented that it bends my perception of what I thought I knew.  Exaggeration aside, I am excited to learn and grow in this space and hope that I too can become proficient enough to be &#8216;smart&#8217;.</p>
+<p>From evented javascript design to being on the front lines of enterprise app development, there&#8217;s a lot to learn.  The people are all amazing, humble, and so extremely talented that it bends my perception of what I thought I knew.  Exaggeration aside, I am excited to learn and grow in this space and hope that I too can become proficient enough to be &#8216;smart&#8217;..... this is some additions</p>
 
 ]]></content>
   </entry>
