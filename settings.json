@@ -1,0 +1,26 @@
+{
+  "blog": {
+    "url": "http://localhost:3000",
+    "title": "Calweb",
+    "description": "Calvin's personal blog",
+    "logo": "https://avatars.githubusercontent.com/u/115030?v=3",
+    "cover": "http://phandroid.s3.amazonaws.com/wp-content/uploads/2014/05/rainbow-nebula.jpg",
+    "disqus_shortname": "calweb",
+    "social": {
+      "twitter": "calweb",
+      "github": "calweb",
+      "linked": "calweb",
+      "instagram": "calweb"
+    }
+  },
+  "authors": {
+    "default": {
+      "name": "Calvin Webster",
+      "bio": "I'm a coder, maybe?  I like to learn and teach.",
+      "website": "http://localhost:5000/author/foo",
+      "image": "http://lorempixel.com/155/155/people/",
+      "cover": "http://lorempixel.com/1100/425/animals/",
+      "slug": "foo"
+    }
+  }
+}
