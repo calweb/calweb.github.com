@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[undefined - Calvin Webster]]></title><description><![CDATA[My space for space]]></description><link>http://calweb.github.io/</link><generator>Ghost</generator><lastBuildDate>Fri, 27 Nov 2015 08:57:43 GMT</lastBuildDate><atom:link href="http://calweb.github.io/tag/undefined/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[How to make a voice controlled Drone]]></title><description><![CDATA[<h4 id="this-is-a-codeblock-">this is a codeblock.</h4>
+<p>and this is a paragraph</p>
+<pre class="hljs"><code><span class="hljs-comment">// this is a comment</span>
+<span class="hljs-keyword">var</span> calvin = <span class="hljs-string">&quot;is cool&quot;</span>;
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">sum</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">var</span> args = [].slice.call(<span class="hljs-built_in">arguments</span>);
+  <span class="hljs-keyword">var</span> total = <span class="hljs-number">0</span>;
+  args.forEach(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">item</span>) </span>{
+    total += item;
+  });
+  <span class="hljs-keyword">return</span> total;
+}</code></pre>]]></description><link>/2015/11/27/get-to-da-choppah.html</link><guid isPermaLink="true">/2015/11/27/get-to-da-choppah.html</guid><category><![CDATA[drone]]></category><category><![CDATA[rolling-spider]]></category><category><![CDATA[javascript]]></category><category><![CDATA[tutorial]]></category><dc:creator><![CDATA[Calvin Webster]]></dc:creator><pubDate>Fri, 27 Nov 2015 15:05:04 GMT</pubDate></item></channel></rss>
