@@ -1,5 +1,220 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Calvin Webster]]></title><description><![CDATA[My space for space]]></description><link>http://calweb.github.io/</link><generator>Ghost</generator><lastBuildDate>Fri, 27 Nov 2015 21:02:04 GMT</lastBuildDate><atom:link href="http://calweb.github.io/rss/index.xml" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Random things that could be better]]></title><description><![CDATA[<p><img src="http://weknowmemes.com/wp-content/uploads/2011/05/rage-guy-original.png" alt=""></p>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Calvin Webster]]></title><description><![CDATA[My space for space]]></description><link>http://calweb.github.io/</link><generator>Ghost</generator><lastBuildDate>Mon, 30 Nov 2015 04:28:40 GMT</lastBuildDate><atom:link href="http://calweb.github.io/rss/index.xml" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[How to make a voice controlled drone]]></title><description><![CDATA[<h2 id="build-a-voice-controlled-rolling-spider-with-nodejs-socket-io-and-annyang-js">Build a voice controlled rolling-spider with nodejs, socket.io, and annyang.js</h2>
+<p>Drones are becoming more popular these days, and it&#39;s getting easier to find one at a reasonable cost.</p>
+<p>For $99, you can buy a <a href="http://www.amazon.com/Parrot-MiniDrone-Rolling-Spider-Red/dp/B00KZM53ZK">Parrot Rolling Spider</a> at Best Buy or Amazon.  </p>
+<p>And what&#39;s awesome about that is that they&#39;re controlled with bluetooth technology. And what&#39;s even more awesome is people like <a href="https://github.com/voodootikigod/node-rolling-spider">Voodootikigod</a> did a bunch of ground work to translate the bluetooth signals from the mini-drone and made a node module that we can use to control our drone in javascript.</p>
+<p>To get started, there are a few requirements to successfully use this demo:</p>
+<ul>
+<li><a href="http://nodejs.org">NodeJS</a></li>
+<li>Bluetooth enabled computer</li>
+<li><a href="http://www.amazon.com/Parrot-MiniDrone-Rolling-Spider-Red/dp/B00KZM53ZK">Parrot Rolling Spider</a></li>
+</ul>
+<p>The basic idea is we&#39;re going to use the Web Speech API via annyangjs in the browser which will then emit a message through websockets, which finally will use the rolling-spider library to send bluetooth commands to our mini drone.</p>
+<p>So, to get started, we just want to build a simple nodejs application that will serve up an html page. (i use express for convenience, but you could be more simple than that as well).</p>
+<p><code>app.js</code> file:</p>
+<pre class="hljs"><code><span class="hljs-keyword">var</span> express = require(<span class="hljs-string">&#39;express&#39;</span>);
+<span class="hljs-keyword">var</span> app = express();
+<span class="hljs-keyword">var</span> server = require(<span class="hljs-string">&#39;http&#39;</span>).Server(app);
+
+app.<span class="hljs-keyword">set</span>(<span class="hljs-string">&#39;port&#39;</span>, process.env.PORT || <span class="hljs-number">3000</span>);
+app.<span class="hljs-keyword">use</span>(express.<span class="hljs-keyword">static</span>(<span class="hljs-string">&#39;public&#39;</span>));
+app.<span class="hljs-keyword">get</span>(<span class="hljs-string">&#39;/&#39;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">(req, res)</span> </span>{
+  res.sendFile(__dirname + <span class="hljs-string">&#39;/public/index.html&#39;</span>)
+});
+
+
+server.listen(app.<span class="hljs-keyword">get</span>(<span class="hljs-string">&#39;port&#39;</span>), <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">()</span> </span>{
+  console.log(<span class="hljs-string">&#39;server listening on &#39;</span> + app.<span class="hljs-keyword">get</span>(<span class="hljs-string">&#39;port&#39;</span>));
+});</code></pre><p>Basically all this <code>app.js</code> file is doing is serving index.html on port 3000, as of now, but in order for us to listen through web sockets, we need to set that up:</p>
+<pre class="hljs"><code><span class="hljs-keyword">var</span> express = require(<span class="hljs-string">&#39;express&#39;</span>);
+<span class="hljs-keyword">var</span> app = express();
+<span class="hljs-keyword">var</span> server = require(<span class="hljs-string">&#39;http&#39;</span>).Server(app);
+<span class="hljs-keyword">var</span> io = require(<span class="hljs-string">&#39;socket.io&#39;</span>)(server);
+
+<span class="hljs-comment">// here we add our node-rolling-spider module as well and create an instance</span>
+<span class="hljs-keyword">var</span> Drone = require(<span class="hljs-string">&#39;rolling-spider&#39;</span>);
+
+<span class="hljs-keyword">var</span> spidey = <span class="hljs-keyword">new</span> Drone(process.env.UUID)
+
+app.<span class="hljs-keyword">set</span>(<span class="hljs-string">&#39;port&#39;</span>, process.env.PORT || <span class="hljs-number">3000</span>);
+app.<span class="hljs-keyword">use</span>(express.<span class="hljs-keyword">static</span>(<span class="hljs-string">&#39;public&#39;</span>));
+app.<span class="hljs-keyword">get</span>(<span class="hljs-string">&#39;/&#39;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">(req, res)</span> </span>{
+  res.sendFile(__dirname + <span class="hljs-string">&#39;/public/index.html&#39;</span>)
+});
+
+
+server.listen(app.<span class="hljs-keyword">get</span>(<span class="hljs-string">&#39;port&#39;</span>), <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">()</span> </span>{
+  console.log(<span class="hljs-string">&#39;server listening on &#39;</span> + app.<span class="hljs-keyword">get</span>(<span class="hljs-string">&#39;port&#39;</span>));
+})
+
+io.on(<span class="hljs-string">&#39;connection&#39;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">(socket)</span> </span>{
+  <span class="hljs-comment">// we&#39;ll be adding here shortly</span>
+
+});</code></pre><p>Now that we have an instance of our drone, the rolling spider module has a very straightforward api.  So if you want to turn left, you simply do something like <code>drone.turnLeft({STEPS: 20})</code> or takeoff <code>drone.takeoff()</code></p>
+<p>I&#39;ve abstracted away all of the commands to takeoff, turn, and flip into a separate file called <code>droneControl.js</code>.  </p>
+<p>This is what our drone controlling code looks like:</p>
+<pre class="hljs"><code><span class="hljs-built_in">module</span>.exports = (<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+<span class="hljs-pi">  &#39;use strict&#39;</span>;
+  <span class="hljs-keyword">var</span> ACTIVE = <span class="hljs-literal">true</span>;
+  <span class="hljs-keyword">var</span> STEPS = <span class="hljs-number">5</span>;
+  <span class="hljs-keyword">var</span> commands = {
+    left: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">drone</span>) </span>{
+      <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&#39;going left&#39;</span>);
+      drone.turnLeft({ steps: <span class="hljs-number">20</span> });
+      <span class="hljs-keyword">this</span>.cooldown();
+    },
+    right: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">drone</span>) </span>{
+      <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&#39;going right&#39;</span>);
+      drone.turnRight({ steps: <span class="hljs-number">20</span> });
+      <span class="hljs-keyword">this</span>.cooldown();
+    },
+    up: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">drone</span>) </span>{
+      <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&#39;up up&#39;</span>);
+      drone.up({ steps: STEPS <em> <span class="hljs-number">2.5</span> });
+      <span class="hljs-keyword">this</span>.cooldown();
+
+    },
+    down: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">drone</span>) </span>{
+      <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&#39;down down&#39;</span>);
+      drone.down({ steps: STEPS </em> <span class="hljs-number">2.5</span> });
+      <span class="hljs-keyword">this</span>.cooldown();
+    },
+    forward: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">drone</span>) </span>{
+      <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&#39;going forward&#39;</span>);
+      drone.forward({ steps: <span class="hljs-number">20</span> });
+      <span class="hljs-keyword">this</span>.cooldown();
+    },
+    backward: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">drone</span>) </span>{
+      <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&#39;going backward&#39;</span>);
+      drone.backward({ steps: <span class="hljs-number">20</span> });
+      <span class="hljs-keyword">this</span>.cooldown();
+    },
+    flip: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">drone</span>) </span>{
+      <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&#39;flippin awesome!&#39;</span>);
+      drone.frontFlip({ steps: STEPS });
+      <span class="hljs-keyword">this</span>.cooldown();
+    },
+    launch: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">drone</span>) </span>{
+      drone.connect(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+        drone.setup(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+          <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&#39;Prepare for take off! &#39;</span>, drone.name);
+          drone.flatTrim();
+          drone.startPing();
+          drone.flatTrim();
+
+          drone.on(<span class="hljs-string">&#39;battery&#39;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+            <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&#39;Battery: &#39;</span> + drone.status.battery + <span class="hljs-string">&#39;%&#39;</span>);
+            drone.signalStrength(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">err, val</span>) </span>{
+              <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&#39;Signal: &#39;</span> + val + <span class="hljs-string">&#39;dBm&#39;</span>);
+            });
+
+          });
+          setTimeout(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+            drone.takeOff();
+            ACTIVE = <span class="hljs-literal">true</span>;
+          }, <span class="hljs-number">1000</span>);
+
+        });
+      });
+
+    },
+    land: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">drone</span>) </span>{
+      <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&#39;landing!!&#39;</span>);
+      drone.land();
+      setTimeout(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+      process.exit();
+      }, <span class="hljs-number">3000</span>);
+    },
+    cooldown: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+      ACTIVE = <span class="hljs-literal">false</span>;
+      setTimeout(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+        ACTIVE = <span class="hljs-literal">true</span>;
+      }, STEPS * <span class="hljs-number">12</span>);
+    },
+    shit: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">drone</span>) </span>{
+      drone.emergency();
+      setTimeout(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+        process.exit();
+      }, <span class="hljs-number">3000</span>);
+    }
+  };
+  <span class="hljs-keyword">return</span> <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">droneInstance, action</span>) </span>{
+    <span class="hljs-keyword">return</span> commands[action](droneInstance)
+  };
+
+})();</code></pre><p>I did this to make it factor out the controlling code from the socket listeners, so you could use it directly in <code>app.js</code> like this:</p>
+<pre class="hljs"><code>var droneControl = require<span class="hljs-list">(&#39;./droneControl&#39;)</span><span class="hljs-comment">;</span>
+
+droneControl<span class="hljs-list">(<span class="hljs-keyword">spidey</span>, <span class="hljs-quoted">&#39;launch</span>&#39;)</span><span class="hljs-comment">;</span>
+droneControl<span class="hljs-list">(<span class="hljs-keyword">spidey</span>, <span class="hljs-quoted">&#39;left</span>&#39;)</span><span class="hljs-comment">;</span></code></pre><p>Doing this allows us to write one (or two) socket listeners, so below is our final <code>app.js</code>:</p>
+<pre class="hljs"><code><span class="hljs-keyword">var</span> express = <span class="hljs-built_in">require</span>(<span class="hljs-string">&#39;express&#39;</span>);
+<span class="hljs-keyword">var</span> app = express();
+<span class="hljs-keyword">var</span> server = <span class="hljs-built_in">require</span>(<span class="hljs-string">&#39;http&#39;</span>).Server(app);
+<span class="hljs-keyword">var</span> io = <span class="hljs-built_in">require</span>(<span class="hljs-string">&#39;socket.io&#39;</span>)(server);
+<span class="hljs-keyword">var</span> Drone = <span class="hljs-built_in">require</span>(<span class="hljs-string">&#39;rolling-spider&#39;</span>);
+<span class="hljs-keyword">var</span> droneControl = <span class="hljs-built_in">require</span>(<span class="hljs-string">&#39;./droneControl&#39;</span>);
+
+<span class="hljs-keyword">var</span> choppah = <span class="hljs-keyword">new</span> Drone(process.env.UUID);
+app.set(<span class="hljs-string">&#39;port&#39;</span>, process.env.PORT || <span class="hljs-number">3000</span>);
+app.use(express.static(<span class="hljs-string">&#39;public&#39;</span>));
+app.get(<span class="hljs-string">&#39;/&#39;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">req, res</span>) </span>{
+  res.sendFile(__dirname + <span class="hljs-string">&#39;/public/index.html&#39;</span>)
+});
+
+
+server.listen(app.get(<span class="hljs-string">&#39;port&#39;</span>), <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&#39;server listening on &#39;</span> + app.get(<span class="hljs-string">&#39;port&#39;</span>));
+})
+
+io.on(<span class="hljs-string">&#39;connection&#39;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">socket</span>) </span>{
+  socket.on(<span class="hljs-string">&#39;choppah&#39;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">data</span>) </span>{
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&#39;choppha!&#39;</span>, data.action);
+    droneControl(choppah, data.action);
+  });
+  socket.on(<span class="hljs-string">&#39;choppah:launch&#39;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+    droneControl(choppah, <span class="hljs-string">&#39;launch&#39;</span>)
+  })
+});</code></pre><p>Now that we have our nodejs side complete, we simply need to create an <code>index.html</code> and <code>main.js</code>.</p>
+<p>For the voice control, we are using annyangjs which basically will wrap the Web Speech API native in chrome and gives us an easy way to write commands to listen for to trigger our socket emitters.</p>
+<p>Here&#39;s the <code>index.html</code>:</p>
+<pre class="hljs"><code><span class="hljs-doctype">&lt;!DOCTYPE html&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">html</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">meta</span> <span class="hljs-attribute">charset</span>=<span class="hljs-value">&quot;utf-8&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">title</span>&gt;</span>chopper!<span class="hljs-tag">&lt;/<span class="hljs-title">title</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">head</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">body</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">h1</span>&gt;</span>hello choppa!<span class="hljs-tag">&lt;/<span class="hljs-title">h1</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">&quot;//cdnjs.cloudflare.com/ajax/libs/annyang/2.0.0/annyang.min.js&quot;</span>&gt;</span><span class="undefined">
+
+    </span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">&quot;<a href="https://cdn.jsdelivr.net/socket.io-client/1.3.2/socket.io.js">https://cdn.jsdelivr.net/socket.io-client/1.3.2/socket.io.js</a>&quot;</span>&gt;</span><span class="undefined">
+
+    </span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">&quot;main.js&quot;</span> <span class="hljs-attribute">charset</span>=<span class="hljs-value">&quot;utf-8&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">html</span>&gt;</span></code></pre><p>And finally, <code>main.js</code> which detects voice commands and emits them with socket.io:</p>
+<pre class="hljs"><code><span class="hljs-keyword">var</span> socket = <span class="hljs-built_in">require</span>(<span class="hljs-string">&#39;socket.io-client&#39;</span>)(<span class="hljs-string">&#39;<a href="http://localhost:3000">http://localhost:3000</a>&#39;</span>);
+
+<span class="hljs-keyword">var</span> commands = {
+    <span class="hljs-string">&#39;get to the choppa&#39;</span>: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">data</span>) </span>{
+      socket.emit(<span class="hljs-string">&#39;choppah:launch&#39;</span>, {msg: <span class="hljs-string">&quot;get to da choppa!&quot;</span>});
+    },
+    <span class="hljs-string">&#39;go *action&#39;</span>: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">action</span>) </span>{
+      <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;action: &quot;</span>, action);
+      socket.emit(<span class="hljs-string">&#39;choppah&#39;</span>, {action: action});
+    }
+  };
+
+  annyang.addCommands(commands);
+  annyang.start();</code></pre><p>Now, you just need to run your app and fire up your browser, then talk to it!</p>
+<p>Start the app:
+<code>node app.js</code></p>
+<p>Open Browser (I&#39;m using Chrome)
+<code>http://localhost:3000</code></p>
+<p>Then say, &#39;get to da choppa&#39; to launch, and <code>go left</code>, <code>go up</code>, and any other directional commands.  To stop the app and land the mini drone, simply say - &#39;go land&#39;;</p>
+<p><a href="https://github.com/calweb/choppah">Here&#39;s the demo code</a></p>
+]]></description><link>/2015/11/27/get-to-da-choppah.html</link><guid isPermaLink="true">/2015/11/27/get-to-da-choppah.html</guid><category><![CDATA[drone]]></category><category><![CDATA[rolling-spider]]></category><category><![CDATA[javascript]]></category><category><![CDATA[tutorial]]></category><dc:creator><![CDATA[Calvin Webster]]></dc:creator><pubDate>Fri, 27 Nov 2015 15:05:04 GMT</pubDate></item><item><title><![CDATA[Random things that could be better]]></title><description><![CDATA[<p><img src="http://weknowmemes.com/wp-content/uploads/2011/05/rage-guy-original.png" alt=""></p>
 <p>So I was thinking today&#8230;well, I like to think that I think everyday, but in this case&#8230;my thinking has had a backlog of sorts.  I feel like I need to write this out as a sort of therapy to release my pressure valve.</p>
 <p>Life is great for me right now, but &#8230;</p>
 <p>Certain things that either have been annoying me or could be better have been bubbling up, but these &#8216;things&#8217; have no particular distinction of being related, save for them being annoying or have the potential to be better&#8230;</p>
