@@ -1,5 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Calvin Webster - Calvin Webster]]></title><description><![CDATA[My space for space]]></description><link>http://calweb.github.io/</link><generator>Ghost</generator><lastBuildDate>Mon, 30 Nov 2015 04:28:40 GMT</lastBuildDate><atom:link href="http://calweb.github.io/author/calvin/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[How to make a voice controlled drone]]></title><description><![CDATA[<h2 id="build-a-voice-controlled-rolling-spider-with-nodejs-socket-io-and-annyang-js">Build a voice controlled rolling-spider with nodejs, socket.io, and annyang.js</h2>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Calvin Webster - Calvin Webster]]></title><description><![CDATA[My space for space]]></description><link>http://calweb.github.io/</link><generator>Ghost</generator><lastBuildDate>Wed, 16 Dec 2015 06:17:44 GMT</lastBuildDate><atom:link href="http://calweb.github.io/author/calvin/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Blog about blog]]></title><description><![CDATA[<h2 id="my-personal-brand-of-ease-blogging-without-maintenance">My personal brand of ease, blogging without maintenance</h2>
+<p>I&#39;ve been blogging on and off now for the past 16 years in some form or capacity[<a href="#1">1</a>].  It has afforded me personal and professional opportunities and allowed a good platform to just vent or get my voice out there in cyberspace.  I&#39;ve never been consistent, but it&#39;s almost like things just build up and I have to write it out.</p>
+<p>This past year has been the most difficult in my life, but I&#39;m still here, thriving and enjoying all of the blessings that have come my way.  I have a lot to say, and to talk about my past year is big on that list, but I&#39;ll save that for a later post.</p>
+<p>I thought I&#39;d write a quick post to talk about this blog and why I chose the technologies involved and why I think I&#39;ll keep up with writing more.</p>
+<p>For the better part of the last 16 years I&#39;ve self hosted my blog either on Livejournal, Xanga, Wordpress or Jekyll/Octopress.  Through blogging I found linux, I found html, css, and finally javascript.  It was my drive to self host and have ultimate control of my blog that led me to learn and tinker.  So blogging, for me, has been not only an exercise in saying what&#39;s on my mind and releasing those thoughts, ideas, and inspirations, but also a playground for me to learn[<a href="#2">2</a>].</p>
+<p>Fast-forward to now.  My patience/time is very limited and maintenance of a website is something that will fall by the wayside if it&#39;s left to my own will.  I used to own <a href="http://calvin.io">calvin.io</a>, but I didn&#39;t renew and a domain squatter now owns that domain.  No biggie, I say, but it definitely shows my lack of keeping up with simple things like that (renewing a domain name).</p>
+<p>I really liked using <a href="http://octopress.org/">Octopress</a> which is a static site generator based on <a href="https://jekyllrb.com/">Jekyll</a>, but after a while, my ruby environment kept breaking...and, of course, one thing that really is laborious, is keeping up with that sort of thing if I rarely write ruby apps these days.</p>
+<p>Enter <a href="https://ghost.org">Ghost</a>.
+<img src="/assets/images/Ghost-Logo-Dark.svg" alt=""></p>
+<p>This awesome node-based blogging/content management platform is something I can definitely play with, but I don&#39;t want to maintain a deployment and use a server, and if I can help it, I&#39;d love to just host my blog on github pages; I really did like the static file generation of Jekyll, but hated to change out themes or have to update my ruby environment...even with rvm, it felt like that&#39;s all I was doing, especially if I wanted to add a feature.</p>
+<p>So it was after checking out <a href="https://staticsitegenerators.net/">this awesome list of static site generators</a> that I found this relatively young project called <a href="https://github.com/mixu/ghost-render">ghost-render</a>.  Because it shared the name of the Ghost platform, I wanted to see what it generated.</p>
+<p>Turns out its pretty freaking awesome!</p>
+<p>All you need to basically do is</p>
+<ol>
+<li>globally install ghost-render via npm<pre class="hljs"><code>npm <span class="hljs-operator"><span class="hljs-keyword">install</span> -<span class="hljs-keyword">g</span> ghost-render</span></code></pre></li>
+<li>make your blog folder/repo<pre class="hljs"><code>mkdir myB<span class="hljs-built_in">log</span>
+<span class="hljs-built_in">cd</span> myB<span class="hljs-built_in">log</span></code></pre></li>
+<li>clone a desireable, already made ghost site theme - mine:<pre class="hljs"><code>git <span class="hljs-keyword">clone</span> <span class="hljs-title">git</span>@github.com:daleanthony/uno.git</code></pre></li>
+<li>Then, in the root of your blog folder, make a <code>settings.json</code> file, here&#39;s mine:<pre class="hljs"><code>{
+&quot;<span class="hljs-attribute">blog</span>&quot;: <span class="hljs-value">{
+ &quot;<span class="hljs-attribute">url</span>&quot;: <span class="hljs-value"><span class="hljs-string">&quot;<a href="http://calweb.github.io">http://calweb.github.io</a>&quot;</span></span>,
+ &quot;<span class="hljs-attribute">title</span>&quot;: <span class="hljs-value"><span class="hljs-string">&quot;Calvin Webster&quot;</span></span>,
+ &quot;<span class="hljs-attribute">description</span>&quot;: <span class="hljs-value"><span class="hljs-string">&quot;My space for space&quot;</span></span>,
+ &quot;<span class="hljs-attribute">logo</span>&quot;: <span class="hljs-value"><span class="hljs-string">&quot;<a href="https://avatars.githubusercontent.com/u/115030?v=3">https://avatars.githubusercontent.com/u/115030?v=3</a>&quot;</span></span>,
+ &quot;<span class="hljs-attribute">cover</span>&quot;: <span class="hljs-value"><span class="hljs-string">&quot;assets/images/coverArt.jpg&quot;</span></span>,
+ &quot;<span class="hljs-attribute">social</span>&quot;: <span class="hljs-value">{
+   &quot;<span class="hljs-attribute">twitter</span>&quot;: <span class="hljs-value"><span class="hljs-string">&quot;calweb&quot;</span></span>,
+   &quot;<span class="hljs-attribute">github</span>&quot;: <span class="hljs-value"><span class="hljs-string">&quot;calweb&quot;</span></span>,
+   &quot;<span class="hljs-attribute">linked</span>&quot;: <span class="hljs-value"><span class="hljs-string">&quot;calweb&quot;</span></span>,
+   &quot;<span class="hljs-attribute">instagram</span>&quot;: <span class="hljs-value"><span class="hljs-string">&quot;calweb&quot;</span>
+ </span>}</span>,
+ &quot;<span class="hljs-attribute">google_analytics</span>&quot;: <span class="hljs-value"><span class="hljs-string">&quot;UA-8904260-8&quot;</span></span>,
+ &quot;<span class="hljs-attribute">disqus_shortname</span>&quot;: <span class="hljs-value"><span class="hljs-string">&quot;calweb&quot;</span>
+</span>}</span>,
+&quot;<span class="hljs-attribute">authors</span>&quot;: <span class="hljs-value">{
+ &quot;<span class="hljs-attribute">default</span>&quot;: <span class="hljs-value">{
+   &quot;<span class="hljs-attribute">name</span>&quot;: <span class="hljs-value"><span class="hljs-string">&quot;Calvin Webster&quot;</span></span>,
+   &quot;<span class="hljs-attribute">bio</span>&quot;: <span class="hljs-value"><span class="hljs-string">&quot;ordinary guy who is extraordinarily curious about our world. born in hawaii, military family, loves beach, nature, and people. Instructor @theironyard&quot;</span></span>,
+   &quot;<span class="hljs-attribute">website</span>&quot;: <span class="hljs-value"><span class="hljs-string">&quot;<a href="http://calweb.github.io/author/calvin">http://calweb.github.io/author/calvin</a>&quot;</span></span>,
+   &quot;<span class="hljs-attribute">image</span>&quot;: <span class="hljs-value"><span class="hljs-string">&quot;<a href="https://avatars.githubusercontent.com/u/115030?v=3">https://avatars.githubusercontent.com/u/115030?v=3</a>&quot;</span></span>,
+   &quot;<span class="hljs-attribute">cover</span>&quot;: <span class="hljs-value"><span class="hljs-string">&quot;<a href="http://lorempixel.com/1100/425/animals/">http://lorempixel.com/1100/425/animals/</a>&quot;</span></span>,
+   &quot;<span class="hljs-attribute">slug</span>&quot;: <span class="hljs-value"><span class="hljs-string">&quot;calvin&quot;</span>
+ </span>}
+</span>}
+</span>}</code></pre></li>
+<li>you&#39;ll need to create the folder of your blog content, in <a href="https://daringfireball.net/projects/markdown/">markdown</a>, with folders that signify the <code>{year}/{month}/{day}/myPost.md</code>.  I made a small bash script to automate this when I want to create a new post, here:</li>
+</ol>
+<script src="https://gist.github.com/calweb/01f2de9b04c55ae91cfa.js"></script>
+
+<ol>
+<li>Then, once you&#39;re happy with your post(s), simply build out the static site using ghost-render with some flags, like this:</li>
+</ol>
+<pre class="hljs"><code>ghost-render --<span class="hljs-tag">input</span> ./_site/ --settings ./settings<span class="hljs-class">.json</span> --theme ./uno --output ../calweb<span class="hljs-class">.github</span><span class="hljs-class">.io</span></code></pre><p>To help break down what ^^ is doing</p>
+<ul>
+<li><code>ghost-render</code> is the utility to build the static site</li>
+<li><code>--input ./_site/</code> is the flag for where are the markdown files are located, which are in my <code>_site</code> directory</li>
+<li><code>--settings ./settings.json</code> holds the main configuration for my Ghost-theme, like name, photos, social links</li>
+<li><code>--theme ./uno</code> is the unaltered theme I cloned from github.  There are tons of ghost themes to choose from. (this is huge for me as I can just clone another theme and change the whole site)</li>
+<li><code>--output ../calweb.github.io</code> and finally where all of the static html files will live, with the appropriate file structure.</li>
+</ul>
+<p>And there you have it, a blog is created and its merely a folder of static html/js/css files, but I have access to any existing ghost theme or I could make/modify my own.  I dont have to login, manage deployments, maintain any environments other than the one I use all the time.</p>
+<p>So....I guess this post got a little longer than I thought.  But the basic reason I chose ghost-render is that its super simple to create posts, make files, push to github and done!  I can spend more time in an editor, writing markdown.  It&#39;s not perfect as I need to write scripts to help me do tasks like making new posts or building the site after some updates, but once I do that, it&#39;s pretty simple and I just have a static site i can publish.</p>
+<p>Maybe this is a new beginning to more blogging!</p>
+<hr>
+<p><a name="1">[1]</a> : <a href="http://calweb.blogspot.com/">Sol Net</a> is the last remnant of my old digital footprint, but probably for the better ;)
+<a name="2">[2]</a> : I am sitting here right now trying to add a markdown footnote, but can&#39;t so I&#39;m looking into changing the Markdown Parser that has that feature in <a href="https://github.com/mixu/ghost-render">ghost-render</a> called <a href="https://github.com/chjj/marked">marked</a> with <a href="https://github.com/markdown-it/markdown-it">markdown-it</a> so that I can...but alas, its trying to call string methods on arrays of the md tokens and I should probably finish this post, instead of hacking around.</p>
+]]></description><link>/2015/12/15/blog-about-blog.html</link><guid isPermaLink="true">/2015/12/15/blog-about-blog.html</guid><category><![CDATA[meta]]></category><category><![CDATA[reflection]]></category><dc:creator><![CDATA[Calvin Webster]]></dc:creator><pubDate>Tue, 15 Dec 2015 16:07:36 GMT</pubDate></item><item><title><![CDATA[How to make a voice controlled drone]]></title><description><![CDATA[<h2 id="build-a-voice-controlled-rolling-spider-with-nodejs-socket-io-and-annyang-js">Build a voice controlled rolling-spider with nodejs, socket.io, and annyang.js</h2>
 <p>Drones are becoming more popular these days, and it&#39;s getting easier to find one at a reasonable cost.</p>
 <p>For $99, you can buy a <a href="http://www.amazon.com/Parrot-MiniDrone-Rolling-Spider-Red/dp/B00KZM53ZK">Parrot Rolling Spider</a> at Best Buy or Amazon.  </p>
 <p>And what&#39;s awesome about that is that they&#39;re controlled with bluetooth technology. And what&#39;s even more awesome is people like <a href="https://github.com/voodootikigod/node-rolling-spider">Voodootikigod</a> did a bunch of ground work to translate the bluetooth signals from the mini-drone and made a node module that we can use to control our drone in javascript.</p>
@@ -9,7 +75,7 @@
 <li>Bluetooth enabled computer</li>
 <li><a href="http://www.amazon.com/Parrot-MiniDrone-Rolling-Spider-Red/dp/B00KZM53ZK">Parrot Rolling Spider</a></li>
 </ul>
-<p>The basic idea is we&#39;re going to use the Web Speech API via annyangjs in the browser which will then emit a message through websockets, which finally will use the rolling-spider library to send bluetooth commands to our mini drone.</p>
+<p>The basic idea is we&#39;re going to use the <a href="http://www.sitepoint.com/introducing-web-speech-api/">Web Speech API</a> via annyangjs in the browser which will then emit a message through websockets, which finally will use the rolling-spider library to send bluetooth commands to our mini drone.</p>
 <p>So, to get started, we just want to build a simple nodejs application that will serve up an html page. (i use express for convenience, but you could be more simple than that as well).</p>
 <p><code>app.js</code> file:</p>
 <pre class="hljs"><code><span class="hljs-keyword">var</span> express = require(<span class="hljs-string">&#39;express&#39;</span>);
